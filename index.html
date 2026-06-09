@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instituto Fígaro Petrópolis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cadastrostyle.css">
+    <link rel="icon" type="image/png" href="figarologo.png">
+</head>
+<body>
+    <!-- ===== MENU HAMBÚRGUER ===== -->
+    <nav class="navbar">
+        <button id="menu-btn" class="menu-btn">
+            <img src="https://img.icons8.com/ios11/512/FFFFFF/menu.png" alt="Menu">
+        </button>
+    </nav>
+
+    <!-- Menu lateral -->
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="fechar-menu" id="fechar-menu">✕</button>
+        <ul>
+            <li><a class="menu-item" href="index.html">Início</a></li>
+            <li>
+                <button class="menu-item btn-expandir" id="btn-cursos">
+                    Cursos
+                    <span class="seta">▼</span>
+                </button>
+                <div class="submenu-cursos" id="submenu-cursos">
+                    <a class="btn-curso" href="barbearia.html">Barbearia</a>
+                    <a class="btn-curso" href="cabelereiro.html">Cabelereiro</a>
+                    <a class="btn-curso" href="manicure.html">Nail Designer</a>
+                    <a class="btn-curso" href="limpeza.html">Limpeza de Pele</a>
+                    <a class="btn-curso" href="trancista.html">Trancista</a>
+                    <a class="btn-curso" href="lash.html">Designer Facial</a>
+                </div>
+            </li>
+            <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-item" href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="cabecalho">
+        <h1 id="titulo">Instituto Fígaro Petrópolis</h1>
+    </header>
+
+    <!-- ===== CARROSSEL ===== -->
+    <div class="carrossel-container">
+        <div class="carrossel" id="carrossel">
+            
+            <!-- Slide 1 - Barbearia -->
+            <div class="slide ativo" data-link="barbearia.html">
+                <img src="https://img.magnific.com/fotos-gratis/jovem-no-barbeiro-a-cortar-o-cabelo_1303-26254.jpg?semt=ais_hybrid&w=740&q=80https://img.magnific.com/fotos-gratis/jovem-no-barbeiro-a-cortar-o-cabelo_1303-26254.jpg?semt=ais_hybrid&w=740&q=80" alt="Barbearia">
+                <div class="slide-info">
+                    <h2>Curso de Barbearia Profissional</h2>
+                    <p>Aprenda técnicas da barbearia contemporânea e tradicional</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 - Cabelereiro -->
+            <div class="slide" data-link="cabelereiro.html">
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FiZWxlaXJlaXJvfGVufDB8fDB8fHww">
+                <div class="slide-info">
+                    <h2>Curso de Cabelereiro Profissional</h2>
+                    <p>Formação completa de estrutura, corte e transformação capilar</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 - Nail Designer -->
+            <div class="slide" data-link="manicure.html">
+                <img src="https://t4.ftcdn.net/jpg/02/85/19/21/360_F_285192162_TN5GDl9EHlkjf9EDd1Hd7YJwbIlyguI0.jpg" alt="Manicure">
+                <div class="slide-info">
+                    <h2>Curso de Nail Designer Profissional</h2>
+                    <p>Formação completa em manicure básica, alongamento e decoração de unhas</p>
+                </div>
+            </div>
+            
+            <!-- Slide 4 - Limpeza de Pele -->
+            <div class="slide" data-link="limpeza.html">
+                <img src="https://img.magnific.com/fotos-gratis/mulher-linda-a-fazer-um-tratamento-de-beleza_329181-18790.jpg?semt=ais_hybrid&w=740&q=80" alt="Limpeza de pele">
+                <div class="slide-info">
+                    <h2>Curso de Limpeza de Pele Profissional</h2>
+                    <p>Aprenda técnicas não invasivas e seguras para o embelezamento facial</p>
+                </div>
+            </div>
+            
+            <!-- Slide 5 - Trancista -->
+            <div class="slide" data-link="trancista.html">
+                <img src="https://academiaondina.com.br/wp-content/uploads/2021/06/miniatura-curso-trancista.webp" alt="Trancista">
+                <div class="slide-info">
+                    <h2>Curso de Trancista Profissional</h2>
+                    <p>Aprenda técnicas ancestrais e domine o mercado da identidade e moda afro</p>
+                </div>
+            </div>
+            
+            <!-- Slide 6 - Lash Designer -->
+            <div class="slide" data-link="lash.html">
+                <img src="https://www.aanaclaralash.com.br/assets/hero-lashes-Bhds6sXS.jpg" alt="Lash Designer">
+                <div class="slide-info">
+                    <h2>Curso de Designer Facial Profissional</h2>
+                    <p>Domine técnicas de extensão de cílios, visagismo facial e design de sombrancelhas </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <button class="btn-nav btn-anterior" id="btnAnterior">&#10094;</button>
+        <button class="btn-nav btn-proximo" id="btnProximo">&#10095;</button>
+
+        <div class="indicadores" id="indicadores">
+            <span class="ponto ativo" data-slide="0"></span>
+            <span class="ponto" data-slide="1"></span>
+            <span class="ponto" data-slide="2"></span>
+            <span class="ponto" data-slide="3"></span>
+            <span class="ponto" data-slide="4"></span>
+            <span class="ponto" data-slide="5"></span>
+        </div>
+    </div>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5524992246158" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+    <script src="cadastrofun.js"></script>
+</body>
+</html>

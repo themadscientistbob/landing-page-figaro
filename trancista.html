@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curso de Trancista - Instituto Fígaro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="barbeariastyle.css">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXiB6k_qSvzW7k1rhX0b4VjhnQHXEzPQzr3A&s">
+</head>
+<body>
+    <!-- ===== BARRA HORIZONTAL NO TOPO ===== -->
+    <div class="barra-topo">
+        <div class="logo-barra">Instituto Fígaro</div>
+        <button id="menu-btn" class="menu-btn">
+            <img src="https://img.icons8.com/ios11/512/FFFFFF/menu.png" alt="Menu">
+        </button>
+    </div>
+
+    <!-- Menu lateral -->
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="fechar-menu" id="fechar-menu">✕</button>
+        <ul>
+            <li><a class="menu-item" href="index.html">Início</a></li>
+            
+            <!-- CURSOS COM SUBMENU EXPANSÍVEL -->
+            <li>
+                <button class="menu-item btn-expandir" id="btn-cursos">
+                    Cursos
+                    <span class="seta">▼</span>
+                </button>
+                <div class="submenu-cursos" id="submenu-cursos">
+                    <a class="btn-curso" href="barbearia.html">Barbearia</a>
+                    <a class="btn-curso" href="cabelereiro.html">Cabelereiro</a>
+                    <a class="btn-curso" href="manicure.html">Nail Designer</a>
+                    <a class="btn-curso" href="limpeza.html">Limpeza de Pele</a>
+                    <a class="btn-curso" href="trancista.html">Trancista</a>
+                    <a class="btn-curso" href="lash.html">Designer Facial</a>
+                </div>
+            </li>
+            
+            <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-item" href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== HERO COM IMAGEM E GRADIENTE ===== -->
+    <section class="hero-curso">
+        <div class="hero-imagem">
+            <img src="https://academiaondina.com.br/wp-content/uploads/2021/06/miniatura-curso-trancista.webp" alt="Barbearia">
+            <div class="hero-gradiente"></div>
+        </div>
+        <div class="hero-conteudo">
+            <h1 class="hero-titulo">Curso de Trancista Profissional</h1>
+            <p class="hero-subtitulo">Domine técnicas ancestrais e contemporâneas de tranças afro</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTEÚDO DO CURSO ===== -->
+    <section class="conteudo-curso">
+        <div class="info-card">
+            <h2>Sobre o Curso</h2>
+            <p>Nosso curso de trancista profissional oferece formação completa em técnicas de tranças nagô, box braids, twists, dreads e tranças em crochê. Com professores experientes e metodologia prática, você estará pronta para atuar no mercado de alta demanda e celebrar a identidade afro.</p>
+        </div>
+
+        <div class="info-card">
+            <h2>Conteúdo Programático</h2>
+            <ul class="lista-curso">
+                <li>Nagô simples e alimentada</li>
+                <li>Ghana Braids e penteado Ghana</li>
+                <li>Box braid</li>
+                <li>Gipsy Braids</li>
+                <li>Boho Braids</li>
+                <li>Twist tradicional e Box</li>
+                <li>Aula de acabamento com máquina e navalhete</li>
+                <li>Aula de empreendedorismo</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h2>Duração e Investimento</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Duração Média</span>
+                    <span class="info-valor">5 meses</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Carga Horária</span>
+                    <span class="info-valor">60h</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Certificado</span>
+                    <span class="info-valor">Chancelado pela FEPCSSP</span>
+                </div>
+        </div>
+
+        <a href="contato.html" class="btn-matricula">Quero me matricular</a>
+    </section>
+        <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5524992246158" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+    <script src="barbeariafun.js"></script>
+</body>
+</html>

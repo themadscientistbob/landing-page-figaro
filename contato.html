@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato - Instituto Fígaro Petrópolis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="contatostyle.css">
+    <link rel="icon" type="image/png" href="figarologo.png">
+</head>
+<body>
+    <!-- ===== BARRA DE NAVEGAÇÃO ===== -->
+    <nav class="navbar">
+        <button id="menu-btn" class="menu-btn" aria-label="Abrir menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <a href="cadastro-screen.html" class="logo">Instituto Fígaro</a>
+    </nav>
+
+    <!-- Menu lateral -->
+    <div class="menu-lateral" id="menu-lateral">
+        <button class="fechar-menu" id="fechar-menu" aria-label="Fechar menu">✕</button>
+        <ul>
+            <li><a class="menu-item" href="index.html">Início</a></li>
+            <li>
+                <button class="menu-item btn-expandir" id="btn-cursos">
+                    Cursos
+                    <span class="seta">▼</span>
+                </button>
+                <div class="submenu-cursos" id="submenu-cursos">
+                    <a class="btn-curso" href="barbearia.html">Barbearia</a>
+                    <a class="btn-curso" href="cabelereiro.html">Cabelereiro</a>
+                    <a class="btn-curso" href="manicure.html">Nail Designer</a>
+                    <a class="btn-curso" href="limpeza.html">Limpeza de Pele</a>
+                    <a class="btn-curso" href="trancista.html">Trancista</a>
+                    <a class="btn-curso" href="lash.html">Designer Facial</a>
+                </div>
+            </li>
+            <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-item" href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero-contato">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-label">Fale Conosco</span>
+            <h1 class="hero-title">Nossas Redes</h1>
+            <p class="hero-subtitle">Conecte-se com o Instituto Fígaro</p>
+        </div>
+    </header>
+
+    <!-- ===== BOTÕES DE CONTATO ===== -->
+    <section class="secao contatos">
+        <div class="container">
+            <div class="contatos-grid">
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/institutofigaropetropolis" target="_blank" class="card-contato instagram">
+                    <div class="card-icone">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+                    </div>
+                    <div class="card-info">
+                        <h3>Instagram</h3>
+                        <p>@institutofigaropetropolis</p>
+                        <span class="card-btn">Seguir</span>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5524992246158" target="_blank" class="card-contato whatsapp">
+                    <div class="card-icone">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </div>
+                    <div class="card-info">
+                        <h3>WhatsApp</h3>
+                        <p>(24) 99224-6158</p>
+                        <span class="card-btn">Conversar</span>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:institutofigaropetropolis@gmail.com?subject=Contato%20pelo%20site" class="card-contato email">
+                    <div class="card-icone">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </div>
+                    <div class="card-info">
+                        <h3>E-mail</h3>
+                        <p>institutofigaropetropolis@gmail.com</p>
+                        <span class="card-btn">Enviar</span>
+                    </div>
+                </a>
+
+                <!-- Localização -->
+                <a href="https://maps.app.goo.gl/ykTAsRJ5Ld3R4UNaA">
+                <div class="card-contato local">
+                    <div class="card-icone">
+                        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Localização">
+                    </div>
+                    <div class="card-info">
+                        <h3>Localização</h3>
+                        <p>Petrópolis, RJ</p>
+                        <span class="card-btn">Ver no mapa</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 Instituto Fígaro Petrópolis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5524992246158" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+    <script src="contatofun.js"></script>
+</body>
+</html>
